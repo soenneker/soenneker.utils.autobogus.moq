@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Utils.AutoBogus.Moq
+﻿# Contributing to Soenneker.Utils.AutoBogus.Moq
 
 We're excited that you're interested in contributing!
 
