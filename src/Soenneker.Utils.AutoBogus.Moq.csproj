@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
         <Nullable>enable</Nullable>
         <Platforms>AnyCPU</Platforms>
         <NoWarn>$(NoWarn);1591</NoWarn>
@@ -9,7 +9,7 @@
 
     <PropertyGroup>
         <Description>An AutoFakerBinder for interfaces and abstract objects using Moq</Description>
-        <Version Condition="'$(BUILD_VERSION)' == ''">3.0.0</Version>
+        <Version Condition="'$(BUILD_VERSION)' == ''">4.0.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.Utils.AutoBogus.Moq</AssemblyName>
         <PackageId>Soenneker.Utils.AutoBogus.Moq</PackageId>
@@ -43,6 +43,6 @@
     
     <ItemGroup>
       <PackageReference Include="Moq" Version="4.20.72" />
-      <PackageReference Include="Soenneker.Utils.AutoBogus" Version="3.0.809" />
+      <PackageReference Include="Soenneker.Utils.AutoBogus" Version="4.0.810" />
     </ItemGroup>
 </Project>
