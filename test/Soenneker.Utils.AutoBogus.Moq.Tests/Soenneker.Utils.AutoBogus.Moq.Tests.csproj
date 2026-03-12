@@ -32,7 +32,7 @@
     <PackageReference Include="xUnit.v3" Version="3.2.2" /></ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Utils.AutoBogus.Moq.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Utils.AutoBogus.Moq\Soenneker.Utils.AutoBogus.Moq.csproj" />
     </ItemGroup>
 
     <ItemGroup>
