@@ -40,5 +40,11 @@ jobs:
       - name: Test
         run: dotnet test test/Soenneker.Utils.AutoBogus.Moq.Tests/Soenneker.Utils.AutoBogus.Moq.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
 
+      - name: Restore library
+        run: dotnet restore src/Soenneker.Utils.AutoBogus.Moq/Soenneker.Utils.AutoBogus.Moq.csproj --verbosity minimal
+
+      - name: Build library
+        run: dotnet build src/Soenneker.Utils.AutoBogus.Moq/Soenneker.Utils.AutoBogus.Moq.csproj --configuration Release --no-restore --verbosity minimal
+
       - name: Pack
         run: dotnet pack src/Soenneker.Utils.AutoBogus.Moq/Soenneker.Utils.AutoBogus.Moq.csproj --configuration Release --no-build --no-restore --output . --verbosity minimal
