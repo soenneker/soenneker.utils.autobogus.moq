@@ -13,6 +13,13 @@ public class MoqAutoFakerBinder : AutoFakerBinder
 {
     private CachedMethod? _ofMethod;
 
+    /// <summary>
+    /// Creates instance.
+    /// </summary>
+    /// <typeparam name="TType">The TType type.</typeparam>
+    /// <param name="context">The context.</param>
+    /// <param name="cachedType">The cached type.</param>
+    /// <returns>The result of the operation.</returns>
     public override TType? CreateInstance<TType>(AutoFakerContext context, CachedType cachedType) where TType : default
     {
         if (cachedType.IsInterface || cachedType.IsAbstract)
