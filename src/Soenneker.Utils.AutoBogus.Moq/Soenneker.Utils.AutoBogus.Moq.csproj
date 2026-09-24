@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Moq" Version="4.20.72" />
+        <PackageReference Include="Moq" Version="4.21.0" />
         <PackageReference Include="Soenneker.Utils.AutoBogus" Version="4.0.964" />
     </ItemGroup>
 </Project>
