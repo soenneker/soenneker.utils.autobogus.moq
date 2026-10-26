@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
+        <TargetFrameworks>net9.0;net10.0;net11.0</TargetFrameworks>
         <IsAotCompatible>true</IsAotCompatible>
         <Nullable>enable</Nullable>
         <Platforms>AnyCPU</Platforms>
@@ -9,7 +9,7 @@
 
     <PropertyGroup>
         <Description>An AutoFakerBinder for interfaces and abstract objects using Moq</Description>
-        <Version Condition="'$(BUILD_VERSION)' == ''">4.0.0</Version>
+        <Version Condition="'$(BUILD_VERSION)' == ''">11.0.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.Utils.AutoBogus.Moq</AssemblyName>
         <PackageId>Soenneker.Utils.AutoBogus.Moq</PackageId>
@@ -46,6 +46,6 @@
 
     <ItemGroup>
         <PackageReference Include="Moq" Version="4.21.0" />
-        <PackageReference Include="Soenneker.Utils.AutoBogus" Version="4.0.989" />
+        <PackageReference Include="Soenneker.Utils.AutoBogus" Version="4.0.991" />
     </ItemGroup>
 </Project>
